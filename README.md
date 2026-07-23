@@ -4,7 +4,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 [![MCP](https://img.shields.io/badge/MCP-1.x-green.svg)](https://modelcontextprotocol.io/)
-[![Tests](https://img.shields.io/badge/tests-114%20passed-brightgreen.svg)](tests/unit/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 这是什么
 
@@ -86,29 +86,10 @@ midas-bridge-mcp/
 │   ├── core/             # HTTP 客户端 + 配置
 │   ├── domain/           # 业务逻辑(15 个模块)
 │   └── tools/            # MCP 工具(15 个模块, ~70 个 tool)
-├── tests/unit/           # 114 个单元测试
-├── skill/                # 桥梁专项技能(钢箱梁/斜拉桥/拱桥等)
 ├── pyproject.toml
 ├── .env.example          # 环境变量模板
-├── .mcp.json.example     # MCP 配置模板
-└── ARCHITECTURE.md       # 架构文档
+└── .mcp.json.example     # MCP 配置模板
 ```
-
-## 运行测试
-
-```bash
-pytest tests/unit/ -v
-# 114 passed in 0.83s
-```
-
-## 技能(Skill)
-
-`skill/` 目录下有面向特定桥梁工程场景的技能：
-
-- `steel_box_section/` — 钢箱截面建模(含精细板壳路径)
-- `cable-stayed-bridge/` — 斜拉桥施工分析
-- `steel_frame/` — 钢框架建模
-- `arch_bridge/` — 拱桥
 
 ## 许可
 
