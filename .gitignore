@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 敏感文件 — 绝对不能提交
+.env
+.mcp.json
+
+# Claude 本地配置(包含 API Key)
+.claude/settings.local.json
+
+# 测试
+tests/
+.pytest_cache/
+
+# IDE / 编辑器
+.vscode/
+.idea/
+
+# 测试临时文件
+.pytest_cache/
+
+# 操作系统临时文件
+Thumbs.db
+.DS_Store

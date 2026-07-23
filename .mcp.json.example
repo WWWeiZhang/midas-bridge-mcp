@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "midas-civil": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "midas_mcp.server"],
+      "cwd": "/path/to/midas-civil-mcp",
+      "env": {
+        "MIDAS_BASE_URL": "http://localhost:8080",
+        "MIDAS_MAPI_KEY": "your-api-key-here",
+        "MIDAS_PRODUCT": "CIVIL",
+        "MIDAS_TIMEOUT": "30",
+        "PYTHONPATH": "src"
+      }
+    }
+  }
+}
